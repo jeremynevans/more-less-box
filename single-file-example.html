@@ -11,9 +11,35 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="more-less-box.css">
+        <style>
+            .main {
+              /* margin: 20px; */
+              padding: 20px;
+            }
+            
+            .more-less-box {
+              float: left;
+              background: #ddd;
+              border-radius: 10px;
+              margin: 20px 20px 20px 0;
+              padding: 1px 20px 20px 20px;
+              max-width: 320px;
+            }
+            
+            .collapsed {
+              max-height: 40px;
+              overflow: hidden;
+            }
+        </style>
+        
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            function toggleMoreLess(areaClass) {
+              $('.' + areaClass).toggleClass('collapsed');
+            }
+        </script>
     </head>
     <body>
     
@@ -44,9 +70,5 @@
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
     </body>
 </html>
